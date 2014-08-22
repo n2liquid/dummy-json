@@ -10,7 +10,11 @@
     "url": "git://github.com/webroo/dummy-json.git"
   },
   "main": "./dummy-json.js",
+  "bin": {
+    "dummy-json": "./dummy-json.cli.js"
+  },
   "dependencies": {
-    "handlebars": "~1.0.12"
+    "handlebars": "~1.0.12",
+    "minimist": "^1.1.0"
   }
 }

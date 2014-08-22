@@ -94,6 +94,15 @@ var template = fs.readFileSync('template.hbs', {encoding: 'utf8'});
 var result = dummyjson.parse(template);
 ```
 
+#### Generate from a file from the command-line
+
+Instead of writing the above code, if Dummy JSON is installed with `npm install -g dummy-json`,
+you should be able to parse files by running this on a terminal:
+
+    dummy-json template.hbs > output.json
+
+Run `dummy-json -h` for more details.
+
 #### Converting to JavaScript object
 
 If there are no errors in the output then the returned string can be parsed into a JavaScript object:
